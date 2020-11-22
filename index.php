@@ -102,7 +102,7 @@ class Database {
     return $stmt;
 }
 
-// Inserts a new row in a table of database
+    //INSERT 
     function insert($tableName, $columns = "", $values = []) {
 
         $columnNames = $this->bindColumnNames($columns);
@@ -114,7 +114,7 @@ class Database {
         return $stmt->execute();
 
     }
-
+    //UPDATE
     function update($tableName, $column = "", $values =[]){
         $columnNames = $this->bindColumnNames($columns);
         $parameters = $this->bindValues($columns);
